@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.3)  5 NOV 2023 05:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.3)  5 NOV 2023 05:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**millipede.jl.tex
-(./millipede.jl.tex
+**millipede-jl.tex
+(./millipede-jl.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22>
 (/usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
@@ -351,8 +351,8 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count293
 \l__pdf_internal_box=\box56
 )
-(./millipede.jl.aux)
-\openout1 = `millipede.jl.aux'.
+No file millipede-jl.aux.
+\openout1 = `millipede-jl.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
@@ -372,7 +372,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
-
 (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count294
@@ -430,16 +429,21 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 28.
-(./millipede.jl.out) (./millipede.jl.out)
 \@outlinefile=\write3
-\openout3 = `millipede.jl.out'.
+\openout3 = `millipede-jl.out'.
 
- [1
+[1
 
-{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./mill
-ipede.jl.aux)
-Package rerunfilecheck Info: File `millipede.jl.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./millipede-jl.aux)
+
+Package rerunfilecheck Warning: File `millipede-jl.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `millipede-jl.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
  )
 (\end occurred inside a group at level 2)
 
@@ -447,8 +451,8 @@ Package rerunfilecheck Info: File `millipede.jl.out' has not changed.
 ### simple group (level 1) entered at line 30 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 10939 strings out of 476025
- 170975 string characters out of 5790018
+ 10933 strings out of 476025
+ 170873 string characters out of 5790018
  1850388 words of memory out of 5000000
  31268 multiletter control sequences out of 15000+600000
  512701 words of font info for 34 fonts, out of 8000000 for 9000
@@ -457,7 +461,7 @@ Here is how much of TeX's memory you used:
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmr10.pfb>
-Output written on millipede.jl.pdf (1 page, 24765 bytes).
+Output written on millipede-jl.pdf (1 page, 24765 bytes).
 PDF statistics:
  23 PDF objects out of 1000 (max. 8388607)
  15 compressed objects within 1 object stream
