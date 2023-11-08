@@ -1,17 +1,31 @@
+function key(n)
+    rand(Bool,n)
+end
 
+function rgb(r,g,b)
+    "\e[38;2;$(r);$(g);$(b)m"
+end
 
-str(v,s)  = join(map(i -> i ? "|"*s : "0"*s , v))
+function red()
+    rgb(255,0,0)
+end
 
-print_vec(v) = print(str(v,""),"\n")
+function yellow()
+    rgb(255,255,0)
+end
 
-key(n) = rand(Bool,n)
+function white()
+    rgb(255,255,255)
+end
 
-rgb(r,g,b) =  "\e[38;2;$(r);$(g);$(b)m"
+function gray(h)
+    rgb(h,h,h)
+end
 
-red() = rgb(255,0,0)
-yellow() = rgb(255,255,0)
-white() = rgb(255,255,255)
-gray(h) = rgb(h,h,h)
+function str_from_vec(v,c)
+    alph = "O|"
+    join(map(i -> alph[i+1:i+1]*c, v))
+end
 
 function encode(p,q,x)
     f = deepcopy(q)
@@ -60,13 +74,13 @@ end
 
 function demo()
     f = key(32)
-    print(white(),"f  ==  ", gray(255),str(f,""),"\n\n")
+    print(white(),"f  ==  ", gray(255),str_from_vec(f,""),"\n\n")
     for i in 1:8
         p = key(64)
-        print(white(),"p  ==  ",red(), str(p,""),"\n")
+        print(white(),"p  ==  ",red(), str_from_vec(p,""),"\n")
         c = encrypt(p,f)
-        print(white(),"c  ==  ",yellow(), str(c,""),"\n")
-        print(white(),"       ", gray(100),str(p .!= c,""),"\n\n")
+        print(white(),"c  ==  ",yellow(), str_from_vec(c,""),"\n")
+        print(white(),"       ", gray(100),str_from_vec(p .!= c,""),"\n\n")
         d = decrypt(c,f)
         if p != d print("\nERROR\n") end
     end
